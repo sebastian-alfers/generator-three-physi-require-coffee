@@ -1,0 +1,36 @@
+{
+  "name": "generator-three-physi-require-coffee",
+  "version": "0.0.1",
+  "description": "Bootstrap threejs and physijs with requirejs and coffee script",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "sebastian-alfers/generator-three-physi-require-coffee",
+  "author": {
+    "name": "Sebastian Alfers",
+    "email": "sebastian.alfers@gmail.com",
+    "url": "https://github.com/sebastian-alfers"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.17.0",
+    "chalk": "^0.5.0",
+    "yosay": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}

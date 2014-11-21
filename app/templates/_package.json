@@ -1,0 +1,31 @@
+{
+  "name": "<%= _.slugify(_.humanize(appName)) %>",
+  "description": "What do you do?",
+  "version": "0.1.0",
+  "author": {
+    "name": "Your Name",
+    "email": "email@domain.com",
+    "url": "http://bower.io/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://mit-license.org"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-coffee": "^0.12.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^0.8.0",
+    "grunt-bowercopy": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "repository-url.git"
+  }
+}

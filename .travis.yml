@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-three-physi-require-coffee' ]; then cd .. && eval "mv $currentfolder generator-three-physi-require-coffee" && cd generator-three-physi-require-coffee; fi
+
