@@ -42,7 +42,12 @@ var ThreePhysiRequireCoffeeGenerator = yeoman.generators.Base.extend({
       this.template('_Gruntfile.coffee', 'Gruntfile.coffee');
 
       this.src.copy('css/_styles.css', 'app/css/styles.css');
-      this.src.copy('js/_main.js', 'app/js/main.js');
+      // this.src.copy('js/_main.js', 'app/js/main.js');
+      this.src.copy('coffee/_main.coffee', 'coffee/main.coffee')
+
+      this.src.copy('js/vendor/ammo.js', 'app/js/vendor/ammo.js')
+      this.src.copy('js/vendor/physi.js', 'app/js/vendor/physi.js')
+      this.src.copy('js/vendor/physijs_worker.js', 'app/js/vendor/physijs_worker.js')
 
       this.template('_index.html', 'app/index.html');
     },

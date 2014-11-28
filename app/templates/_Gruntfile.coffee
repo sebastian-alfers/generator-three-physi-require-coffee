@@ -22,6 +22,7 @@ module.exports = (grunt) ->
           "physijs_worker.js": "physijs/physijs_worker.js"
           "jquery.js": "jquery/dist/jquery.min.js"
           "stats.min.js": "stats.js/build/stats.min.js"
+          "ammo.js": "ammo.js/builds/ammo.js"
       css:
         options:
           destPrefix: "app/css/vendor"
@@ -39,7 +40,7 @@ module.exports = (grunt) ->
         flatten: true,
         cwd: "coffee/",
         src: ['*.coffee'],
-        dest: 'js/',
+        dest: 'app/js/',
         ext: '.js'
     connect:
       options:
@@ -56,6 +57,6 @@ module.exports = (grunt) ->
 
 
   grunt.registerTask "serve", ->
-    grunt.task.run ["connect:livereload", "watch"]
+    grunt.task.run ["coffee", "connect:livereload", "watch"]
 
-  grunt.registerTask "default", ["bowercopy", "jshint", "serve"]
+  grunt.registerTask "default", ["coffee", "bowercopy", "serve"]

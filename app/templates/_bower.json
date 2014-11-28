@@ -2,7 +2,7 @@
   "name": "test-test",
   "version": "0.1.0",
   "dependencies": {
-    "physijs": "",
+    "threejs": "r59",
     "requirejs": "~2.1.9",
     "jquery": ">= 1.9.0",
     "normalize.css": "~3.0.2",
