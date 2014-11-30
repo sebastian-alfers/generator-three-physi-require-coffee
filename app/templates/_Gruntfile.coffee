@@ -18,11 +18,8 @@ module.exports = (grunt) ->
         files:
           "three.js": "threejs/build/three.js"
           "require.js": "requirejs/require.js"
-          "physi.js": "physijs/physi.js"
-          "physijs_worker.js": "physijs/physijs_worker.js"
           "jquery.js": "jquery/dist/jquery.min.js"
           "stats.min.js": "stats.js/build/stats.min.js"
-          "ammo.js": "ammo.js/builds/ammo.js"
       css:
         options:
           destPrefix: "app/css/vendor"
